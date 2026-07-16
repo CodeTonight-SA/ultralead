@@ -4,4 +4,4 @@
 // prints the URL, e.g. https://ultralead-submit.<your-subdomain>.workers.dev
 // Then set it here and commit. Until then, the quiz still completes fully
 // client-side (graceful degrade) — the Slack notify just doesn't fire.
-window.ULTRALEAD_SUBMIT_URL = "https://ultralead-submit.venturequiz.workers.dev/submit";
+window.ULTRALEAD_SUBMIT_URL = "https://ultralead-submit.laurscheepers.workers.dev/submit";
