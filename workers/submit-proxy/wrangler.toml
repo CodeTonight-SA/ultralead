@@ -1,0 +1,11 @@
+name = "ultralead-submit"
+main = "worker.js"
+compatibility_date = "2026-07-01"
+
+[vars]
+ALLOW_ORIGIN = "https://codetonight-sa.github.io"
+SLACK_CHANNEL = "C0ALQ9C7NMA"
+NOTIFY_TITLE = "Venture enquiry"
+
+# SLACK_BOT_TOKEN is a SECRET — never put it here. Set it with:
+#   npx wrangler secret put SLACK_BOT_TOKEN

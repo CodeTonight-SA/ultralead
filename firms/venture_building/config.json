@@ -1,0 +1,31 @@
+{
+  "_meta": {
+    "slug": "venture_building",
+    "name": "Venture Building (generic)",
+    "version": "0.1.0",
+    "comment": "Generic venture-building discovery funnel — the a-priori template. Clone per founder/venture. Leave slack_channel empty to route to the default team channel; set it to a dedicated channel ID after creating one (see SLACK-SETUP.md)."
+  },
+  "brand": {
+    "name": "CodeTonight",
+    "tagline": "From an idea to a thing that actually works.",
+    "palette": {
+      "paper": "#F5F6F9",
+      "ink": "#0F2A4A",
+      "accent": "#1F8A70",
+      "muted": "#5B6572"
+    }
+  },
+  "services": [
+    { "id": "shape_idea", "label": "Shape & validate the idea", "lead_to": "discovery_consult" },
+    { "id": "build_mvp", "label": "Build a first working version (MVP)", "lead_to": "mvp_build" },
+    { "id": "co_build", "label": "Technical co-build partner", "lead_to": "co_build_partnership" },
+    { "id": "scale_fix", "label": "Grow or fix what exists", "lead_to": "scale_engagement" }
+  ],
+  "outbound": {
+    "signature_name": "the CodeTonight team",
+    "from_inbox": "grip-trial-out@agentmail.to",
+    "reply_to": "development@codetonight.co.za"
+  },
+  "slack_channel": "",
+  "notify_title": "Venture enquiry"
+}

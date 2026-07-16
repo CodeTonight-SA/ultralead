@@ -1,0 +1,104 @@
+{
+  "_meta": {
+    "title": "Find the right help",
+    "subtitle": "Tell us about your situation. Three minutes.",
+    "version": "0.0.1-scaffold",
+    "TODO": [
+      "W2: variable tempo reveal — 800ms→200ms per Q",
+      "W3: voice modality (Web Speech API + cached MP3 fallback)",
+      "W4: server-side score recompute (Goodhart-proof, lifted from donna)",
+      "W6: per-firm questions overrides"
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "category": "intent",
+      "weight": 1.0,
+      "tempo_ms": 800,
+      "text": "What's prompting you to look for help today?",
+      "options": [
+        { "value": "a", "label": "Something happened to me.", "lead_to": "reactive" },
+        { "value": "b", "label": "I'm planning ahead.", "lead_to": "proactive" },
+        { "value": "c", "label": "Someone told me I should.", "lead_to": "referral" },
+        { "value": "d", "label": "I'm not sure — just exploring.", "lead_to": "exploring" }
+      ]
+    },
+    {
+      "id": "q2",
+      "category": "domain",
+      "weight": 1.2,
+      "tempo_ms": 600,
+      "text": "Which of these is closest?",
+      "options": [
+        { "value": "a", "label": "Work — employer, contract, dispute.", "lead_to": "employment" },
+        { "value": "b", "label": "Family — relationship, children, estate.", "lead_to": "family" },
+        { "value": "c", "label": "Business — company, deal, regulator.", "lead_to": "commercial" },
+        { "value": "d", "label": "Property — buying, selling, dispute.", "lead_to": "property" },
+        { "value": "e", "label": "None of those.", "lead_to": "general" }
+      ]
+    },
+    {
+      "id": "q3",
+      "category": "urgency",
+      "weight": 1.1,
+      "tempo_ms": 600,
+      "text": "How urgent does it feel?",
+      "options": [
+        { "value": "a", "label": "There's a deadline this week.", "lead_to": "urgent" },
+        { "value": "b", "label": "Within the next month.", "lead_to": "soon" },
+        { "value": "c", "label": "No specific deadline.", "lead_to": "flexible" },
+        { "value": "d", "label": "I'm just trying to understand my options.", "lead_to": "research" }
+      ]
+    },
+    {
+      "id": "q4",
+      "category": "experience",
+      "weight": 0.8,
+      "tempo_ms": 400,
+      "text": "Have you spoken to a lawyer about this already?",
+      "options": [
+        { "value": "a", "label": "No, you're the first.", "lead_to": "new" },
+        { "value": "b", "label": "Yes, but I want a second view.", "lead_to": "second_opinion" },
+        { "value": "c", "label": "Yes, and I'm switching.", "lead_to": "switching" },
+        { "value": "d", "label": "Yes — I just want to confirm something.", "lead_to": "confirming" }
+      ]
+    },
+    {
+      "id": "q5",
+      "category": "preference",
+      "weight": 0.9,
+      "tempo_ms": 400,
+      "text": "How do you prefer to communicate?",
+      "options": [
+        { "value": "a", "label": "Email — async, written.", "lead_to": "email_first" },
+        { "value": "b", "label": "Phone — voice, fast.", "lead_to": "phone_first" },
+        { "value": "c", "label": "In person — formal.", "lead_to": "in_person" },
+        { "value": "d", "label": "Whatever's quickest.", "lead_to": "flex_comms" }
+      ]
+    },
+    {
+      "id": "q6",
+      "category": "context",
+      "weight": 1.0,
+      "tempo_ms": 200,
+      "text": "Is anyone else involved who you need to keep in the loop?",
+      "options": [
+        { "value": "a", "label": "Just me.", "lead_to": "solo" },
+        { "value": "b", "label": "Family or partner.", "lead_to": "family_loop" },
+        { "value": "c", "label": "Co-founder or business partner.", "lead_to": "business_loop" },
+        { "value": "d", "label": "Other professionals — accountant, broker.", "lead_to": "pro_loop" }
+      ]
+    },
+    {
+      "id": "q7",
+      "category": "freeform",
+      "weight": 0.0,
+      "tempo_ms": 200,
+      "input": "textarea",
+      "max_length": 280,
+      "text": "Anything you want us to know in your own words? (optional)",
+      "placeholder": "A sentence or two. Or skip."
+    }
+  ]
+}

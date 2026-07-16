@@ -1,0 +1,99 @@
+{
+  "_meta": {
+    "title": "Tell us about your venture",
+    "subtitle": "Six quick questions, about three minutes. No wrong answers.",
+    "version": "0.1.0",
+    "kind": "venture-building",
+    "comment": "Generic venture-building discovery template. q1 drives the deterministic offering match (see api/submit matchOfferingsFloor). Clone this container per founder/venture."
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "category": "need",
+      "weight": 1.2,
+      "tempo_ms": 800,
+      "text": "What would help you most right now?",
+      "options": [
+        { "value": "a", "label": "Shape and pressure-test the idea.", "lead_to": "shape_idea" },
+        { "value": "b", "label": "Build a first working version (an MVP).", "lead_to": "build_mvp" },
+        { "value": "c", "label": "A technical partner to build it with me.", "lead_to": "co_build" },
+        { "value": "d", "label": "Grow or fix something that already exists.", "lead_to": "scale_fix" }
+      ]
+    },
+    {
+      "id": "q2",
+      "category": "stage",
+      "weight": 1.0,
+      "tempo_ms": 600,
+      "text": "Where is the venture today?",
+      "options": [
+        { "value": "a", "label": "Just an idea in my head.", "lead_to": "idea" },
+        { "value": "b", "label": "A rough prototype or demo.", "lead_to": "prototype" },
+        { "value": "c", "label": "A few early users.", "lead_to": "early_users" },
+        { "value": "d", "label": "Live with real customers.", "lead_to": "live" }
+      ]
+    },
+    {
+      "id": "q3",
+      "category": "customer",
+      "weight": 1.0,
+      "tempo_ms": 600,
+      "text": "Who is it for?",
+      "options": [
+        { "value": "a", "label": "Everyday people (consumers).", "lead_to": "consumer" },
+        { "value": "b", "label": "Small and medium businesses.", "lead_to": "sme" },
+        { "value": "c", "label": "Large companies or government.", "lead_to": "enterprise" },
+        { "value": "d", "label": "NPOs and community organisations.", "lead_to": "social" }
+      ]
+    },
+    {
+      "id": "q4",
+      "category": "traction",
+      "weight": 0.9,
+      "tempo_ms": 400,
+      "text": "What proof do you have so far?",
+      "options": [
+        { "value": "a", "label": "A strong conviction, no proof yet.", "lead_to": "conviction" },
+        { "value": "b", "label": "People say they would use it.", "lead_to": "interest" },
+        { "value": "c", "label": "Some people are already using it.", "lead_to": "usage" },
+        { "value": "d", "label": "Someone is paying for it.", "lead_to": "revenue" }
+      ]
+    },
+    {
+      "id": "q5",
+      "category": "team",
+      "weight": 0.8,
+      "tempo_ms": 400,
+      "text": "Who is building it?",
+      "options": [
+        { "value": "a", "label": "Just me.", "lead_to": "solo" },
+        { "value": "b", "label": "Me and a co-founder or two.", "lead_to": "cofounders" },
+        { "value": "c", "label": "A small team.", "lead_to": "team" },
+        { "value": "d", "label": "Mostly outsourced or freelancers.", "lead_to": "outsourced" }
+      ]
+    },
+    {
+      "id": "q6",
+      "category": "resourcing",
+      "weight": 0.9,
+      "tempo_ms": 300,
+      "text": "How is it resourced right now?",
+      "options": [
+        { "value": "a", "label": "Bootstrapping — little or no budget.", "lead_to": "bootstrap" },
+        { "value": "b", "label": "Personal savings.", "lead_to": "savings" },
+        { "value": "c", "label": "Angel, grant, or pre-seed funding.", "lead_to": "funded" },
+        { "value": "d", "label": "It pays for itself already.", "lead_to": "revenue_funded" }
+      ]
+    },
+    {
+      "id": "q7",
+      "category": "freeform",
+      "weight": 0.0,
+      "tempo_ms": 200,
+      "input": "textarea",
+      "max_length": 280,
+      "text": "In a sentence or two — what is the single biggest thing you need help with?",
+      "placeholder": "Say it however you like. Or skip."
+    }
+  ]
+}

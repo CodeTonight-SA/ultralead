@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "slug": "_default",
+    "name": "Default firm (placeholder)",
+    "version": "0.0.1",
+    "comment": "Used when no ?firm= query param present. Replace per-pilot."
+  },
+  "brand": {
+    "name": "the firm",
+    "tagline": "We help with the awkward bit.",
+    "palette": {
+      "paper": "#F5F4F0",
+      "ink": "#1A1A1A",
+      "accent": "#FF6600",
+      "muted": "#5B5550"
+    }
+  },
+  "services": [
+    { "id": "general", "label": "General enquiry", "lead_to": "general_consult" },
+    { "id": "employment", "label": "Employment", "lead_to": "employment_consult" },
+    { "id": "family", "label": "Family", "lead_to": "family_consult" },
+    { "id": "commercial", "label": "Commercial", "lead_to": "commercial_consult" }
+  ],
+  "outbound": {
+    "signature_name": "the team",
+    "from_inbox": "grip-trial-out@agentmail.to",
+    "reply_to": null
+  }
+}
