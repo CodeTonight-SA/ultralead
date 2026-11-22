@@ -6,7 +6,7 @@
     "TODO": [
       "W2: variable tempo reveal — 800ms→200ms per Q",
       "W3: voice modality (Web Speech API + cached MP3 fallback)",
-      "W4: server-side score recompute (Goodhart-proof, lifted from donna)",
+      "W4: server-side score recompute (Goodhart-proof, lifted from GRIP's own IDR pattern)",
       "W6: per-firm questions overrides"
     ]
   },
